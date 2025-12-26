@@ -1,24 +1,46 @@
-<img width="945" height="635" alt="image" src="https://github.com/user-attachments/assets/13716305-d4e5-4fe9-ae58-ace58b0c1c07" />
-📊 Grafana + Prometheus + Node Exporter Monitoring
+# 🚀 Grafana + Prometheus + Node Exporter Monitoring
 
-Ce projet met en place une stack de monitoring complète sur Ubuntu Server en utilisant :
+![Monitoring](https://img.shields.io/badge/Status-Production-green)
+![Ubuntu](https://img.shields.io/badge/OS-Ubuntu-blue)
+![Skills](https://img.shields.io/badge/Skills-SysAdmin%20%7C%20DevOps-yellow)
 
-Prometheus pour la collecte des métriques
+---
 
-Node Exporter pour surveiller les performances système
+## 🔍 Project Overview
+Une **stack de monitoring complète** pour surveiller vos serveurs Linux en temps réel :
 
-Grafana pour visualiser les données via des dashboards interactifs
+- 📊 **Grafana** : dashboards interactifs et prêts à l’emploi  
+- ⚡ **Prometheus** : collecte et stockage des métriques  
+- 🖥️ **Node Exporter** : performance CPU, RAM, disque, réseau  
 
-🎯 Objectif : superviser en temps réel l’utilisation CPU, RAM, stockage, réseau et l’état général du serveur.
+**Objectif :** Avoir une visibilité totale sur l’état et les performances d’un serveur.
 
-🧠 Compétences développées :
+---
 
-Administration système Linux
+## 🎨 Highlights
+- Dashboards Grafana modernes et clairs  
+- Surveillance multi-serveur via Node Exporter  
+- Alertes simples configurables  
+- Facile à déployer sur Ubuntu Server
 
-Installation et configuration de services
+![Grafana Dashboard](./screenshots/dashboard.png)
 
-Monitoring et observabilité
+---
 
-Création de dashboards Grafana
+## 🛠️ Installation rapide
 
-📌 Projet réalisé dans un homelab pour renforcer mes compétences SysAdmin / DevOps.
+```bash
+# Installer Node Exporter
+sudo apt install prometheus-node-exporter
+
+# Installer Prometheus
+sudo apt install prometheus
+
+# Configurer Prometheus pour scrapper Node Exporter
+# Installer Grafana
+sudo apt install grafana
+
+# Lancer les services
+sudo systemctl start prometheus
+sudo systemctl start grafana-server
+sudo systemctl start prometheus-node-exporter
