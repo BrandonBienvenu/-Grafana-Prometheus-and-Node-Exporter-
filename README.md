@@ -23,7 +23,11 @@ Une **stack de monitoring complète** pour surveiller vos serveurs Linux en temp
 - Alertes simples configurables  
 - Facile à déployer sur Ubuntu Server
 
-![Grafana Dashboard](./screenshots/dashboard.png)
+
+
+
+ # ![Grafana Dashboard] 
+ <img width="3360" height="1878" alt="grafana-dashboard-english" src="https://github.com/user-attachments/assets/b724f1a0-f7e3-4451-97ee-ecb91ef57c8b" />
 
 ---
 
